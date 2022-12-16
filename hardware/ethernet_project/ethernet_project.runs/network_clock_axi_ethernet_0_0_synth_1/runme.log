@@ -1,0 +1,301 @@
+
+*** Running vivado
+    with args -log network_clock_axi_ethernet_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source network_clock_axi_ethernet_0_0.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source network_clock_axi_ethernet_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Data/en.525.612/Parlak_Project/hardware/user_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.cache/ip 
+Command: synth_design -top network_clock_axi_ethernet_0_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14088
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1243.891 ; gain = 81.824
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'network_clock_axi_ethernet_0_0' [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/synth/network_clock_axi_ethernet_0_0.v:59]
+INFO: [Synth 8-6157] synthesizing module 'bd_ae0d' [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/synth/bd_ae0d.v:10]
+INFO: [Synth 8-6157] synthesizing module 'bd_ae0d_c_counter_binary_0_0' [C:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.runs/network_clock_axi_ethernet_0_0_synth_1/.Xil/Vivado-40356-DESKTOP-NN01VN7/realtime/bd_ae0d_c_counter_binary_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ae0d_c_counter_binary_0_0' (1#1) [C:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.runs/network_clock_axi_ethernet_0_0_synth_1/.Xil/Vivado-40356-DESKTOP-NN01VN7/realtime/bd_ae0d_c_counter_binary_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'Q' of module 'bd_ae0d_c_counter_binary_0_0' is unconnected for instance 'c_counter_binary_0' [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/synth/bd_ae0d.v:293]
+WARNING: [Synth 8-7023] instance 'c_counter_binary_0' of module 'bd_ae0d_c_counter_binary_0_0' has 4 connections declared, but only 3 given [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/synth/bd_ae0d.v:293]
+INFO: [Synth 8-6157] synthesizing module 'bd_ae0d_c_shift_ram_0_0' [C:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.runs/network_clock_axi_ethernet_0_0_synth_1/.Xil/Vivado-40356-DESKTOP-NN01VN7/realtime/bd_ae0d_c_shift_ram_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ae0d_c_shift_ram_0_0' (2#1) [C:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.runs/network_clock_axi_ethernet_0_0_synth_1/.Xil/Vivado-40356-DESKTOP-NN01VN7/realtime/bd_ae0d_c_shift_ram_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_ae0d_eth_buf_0' [C:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.runs/network_clock_axi_ethernet_0_0_synth_1/.Xil/Vivado-40356-DESKTOP-NN01VN7/realtime/bd_ae0d_eth_buf_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ae0d_eth_buf_0' (3#1) [C:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.runs/network_clock_axi_ethernet_0_0_synth_1/.Xil/Vivado-40356-DESKTOP-NN01VN7/realtime/bd_ae0d_eth_buf_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'RESET2PCSPMA' of module 'bd_ae0d_eth_buf_0' is unconnected for instance 'eth_buf' [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/synth/bd_ae0d.v:303]
+WARNING: [Synth 8-7071] port 'PHY_RST_N' of module 'bd_ae0d_eth_buf_0' is unconnected for instance 'eth_buf' [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/synth/bd_ae0d.v:303]
+WARNING: [Synth 8-7071] port 'mdio_o_top' of module 'bd_ae0d_eth_buf_0' is unconnected for instance 'eth_buf' [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/synth/bd_ae0d.v:303]
+WARNING: [Synth 8-7071] port 'mdio_t_top' of module 'bd_ae0d_eth_buf_0' is unconnected for instance 'eth_buf' [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/synth/bd_ae0d.v:303]
+WARNING: [Synth 8-7071] port 'mdc_top' of module 'bd_ae0d_eth_buf_0' is unconnected for instance 'eth_buf' [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/synth/bd_ae0d.v:303]
+WARNING: [Synth 8-7071] port 'mdio_i_temac' of module 'bd_ae0d_eth_buf_0' is unconnected for instance 'eth_buf' [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/synth/bd_ae0d.v:303]
+WARNING: [Synth 8-7023] instance 'eth_buf' of module 'bd_ae0d_eth_buf_0' has 102 connections declared, but only 96 given [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/synth/bd_ae0d.v:303]
+INFO: [Synth 8-6157] synthesizing module 'bd_ae0d_mac_0' [C:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.runs/network_clock_axi_ethernet_0_0_synth_1/.Xil/Vivado-40356-DESKTOP-NN01VN7/realtime/bd_ae0d_mac_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ae0d_mac_0' (4#1) [C:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.runs/network_clock_axi_ethernet_0_0_synth_1/.Xil/Vivado-40356-DESKTOP-NN01VN7/realtime/bd_ae0d_mac_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rx_axis_filter_tuser' of module 'bd_ae0d_mac_0' is unconnected for instance 'mac' [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/synth/bd_ae0d.v:400]
+WARNING: [Synth 8-7071] port 'tx_enable' of module 'bd_ae0d_mac_0' is unconnected for instance 'mac' [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/synth/bd_ae0d.v:400]
+WARNING: [Synth 8-7071] port 'tx_statistics_vector' of module 'bd_ae0d_mac_0' is unconnected for instance 'mac' [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/synth/bd_ae0d.v:400]
+WARNING: [Synth 8-7071] port 'tx_statistics_valid' of module 'bd_ae0d_mac_0' is unconnected for instance 'mac' [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/synth/bd_ae0d.v:400]
+WARNING: [Synth 8-7071] port 'speedis100' of module 'bd_ae0d_mac_0' is unconnected for instance 'mac' [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/synth/bd_ae0d.v:400]
+WARNING: [Synth 8-7023] instance 'mac' of module 'bd_ae0d_mac_0' has 60 connections declared, but only 55 given [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/synth/bd_ae0d.v:400]
+INFO: [Synth 8-6157] synthesizing module 'bd_ae0d_util_vector_logic_0_0' [C:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.runs/network_clock_axi_ethernet_0_0_synth_1/.Xil/Vivado-40356-DESKTOP-NN01VN7/realtime/bd_ae0d_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ae0d_util_vector_logic_0_0' (5#1) [C:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.runs/network_clock_axi_ethernet_0_0_synth_1/.Xil/Vivado-40356-DESKTOP-NN01VN7/realtime/bd_ae0d_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_ae0d_xlconstant_0_0' [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_4/synth/bd_ae0d_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 1'b1 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (6#1) [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ae0d_xlconstant_0_0' (7#1) [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_4/synth/bd_ae0d_xlconstant_0_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ae0d' (8#1) [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/synth/bd_ae0d.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'network_clock_axi_ethernet_0_0' (9#1) [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/synth/network_clock_axi_ethernet_0_0.v:59]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1301.004 ; gain = 138.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1301.004 ; gain = 138.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1301.004 ; gain = 138.938
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1301.004 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_0/bd_ae0d_eth_buf_0/bd_bfe0_eth_buf_0_in_context.xdc] for cell 'inst/eth_buf'
+Finished Parsing XDC File [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_0/bd_ae0d_eth_buf_0/bd_bfe0_eth_buf_0_in_context.xdc] for cell 'inst/eth_buf'
+Parsing XDC File [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc] for cell 'inst/mac'
+Finished Parsing XDC File [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc] for cell 'inst/mac'
+Parsing XDC File [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_2/bd_ae0d_c_shift_ram_0_0/bd_bfe0_c_shift_ram_0_0_in_context.xdc] for cell 'inst/c_shift_ram_0'
+Finished Parsing XDC File [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_2/bd_ae0d_c_shift_ram_0_0/bd_bfe0_c_shift_ram_0_0_in_context.xdc] for cell 'inst/c_shift_ram_0'
+Parsing XDC File [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_3/bd_ae0d_c_counter_binary_0_0/bd_bfe0_c_counter_binary_0_0_in_context.xdc] for cell 'inst/c_counter_binary_0'
+Finished Parsing XDC File [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_3/bd_ae0d_c_counter_binary_0_0/bd_bfe0_c_counter_binary_0_0_in_context.xdc] for cell 'inst/c_counter_binary_0'
+Parsing XDC File [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_5/bd_ae0d_util_vector_logic_0_0/bd_bfe0_util_vector_logic_0_0_in_context.xdc] for cell 'inst/util_vector_logic_0'
+Finished Parsing XDC File [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_5/bd_ae0d_util_vector_logic_0_0/bd_bfe0_util_vector_logic_0_0_in_context.xdc] for cell 'inst/util_vector_logic_0'
+Parsing XDC File [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/synth/network_clock_axi_ethernet_0_0_ooc.xdc] for cell 'inst'
+WARNING: [Constraints 18-619] A clock with name 'mii_rx_clk' already exists, overwriting the previous clock with the same name. [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/synth/network_clock_axi_ethernet_0_0_ooc.xdc:38]
+Finished Parsing XDC File [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/synth/network_clock_axi_ethernet_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/network_clock_axi_ethernet_0_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/network_clock_axi_ethernet_0_0_board.xdc] for cell 'inst'
+Parsing XDC File [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/synth/network_clock_axi_ethernet_0_0.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/synth/network_clock_axi_ethernet_0_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/synth/network_clock_axi_ethernet_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/network_clock_axi_ethernet_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/network_clock_axi_ethernet_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.runs/network_clock_axi_ethernet_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.runs/network_clock_axi_ethernet_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1331.941 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1332.059 ; gain = 0.117
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1332.059 ; gain = 169.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1332.059 ; gain = 169.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for mii_rx_clk. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mii_rx_clk. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for mii_rx_dv. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mii_rx_dv. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for mii_rx_er. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mii_rx_er. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for mii_rxd[0]. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mii_rxd[0]. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for mii_rxd[1]. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mii_rxd[1]. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for mii_rxd[2]. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mii_rxd[2]. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for mii_rxd[3]. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mii_rxd[3]. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for mii_tx_clk. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mii_tx_clk. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for mii_tx_en. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mii_tx_en. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for mii_tx_er. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mii_tx_er. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for mii_txd[0]. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mii_txd[0]. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for mii_txd[1]. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mii_txd[1]. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for mii_txd[2]. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mii_txd[2]. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for mii_txd[3]. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc, line 31).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mii_txd[3]. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/bd_ae0d_mac_0/bd_ae0d_mac_0_in_context.xdc, line 32).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/eth_buf. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/mac. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/c_shift_ram_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/c_counter_binary_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/util_vector_logic_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1332.059 ; gain = 169.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1332.059 ; gain = 169.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1332.059 ; gain = 169.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'mii_rx_clk'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1386.844 ; gain = 224.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1386.992 ; gain = 224.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1406.098 ; gain = 244.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1411.895 ; gain = 249.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1411.895 ; gain = 249.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1411.895 ; gain = 249.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1411.895 ; gain = 249.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1411.895 ; gain = 249.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1411.895 ; gain = 249.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------+----------+
+|      |BlackBox name                 |Instances |
++------+------------------------------+----------+
+|1     |bd_ae0d_c_counter_binary_0_0  |         1|
+|2     |bd_ae0d_c_shift_ram_0_0       |         1|
+|3     |bd_ae0d_eth_buf_0             |         1|
+|4     |bd_ae0d_mac_0                 |         1|
+|5     |bd_ae0d_util_vector_logic_0_0 |         1|
++------+------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------+------+
+|      |Cell                        |Count |
++------+----------------------------+------+
+|1     |bd_ae0d_c_counter_binary_0  |     1|
+|2     |bd_ae0d_c_shift_ram_0       |     1|
+|3     |bd_ae0d_eth_buf             |     1|
+|4     |bd_ae0d_mac                 |     1|
+|5     |bd_ae0d_util_vector_logic_0 |     1|
++------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1411.895 ; gain = 249.828
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1411.895 ; gain = 218.773
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1411.895 ; gain = 249.828
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1411.895 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1432.617 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+34 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1437.613 ; gain = 275.547
+INFO: [Common 17-1381] The checkpoint 'C:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.runs/network_clock_axi_ethernet_0_0_synth_1/network_clock_axi_ethernet_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP network_clock_axi_ethernet_0_0, cache-ID = 861eaeda7572e083
+INFO: [Coretcl 2-1174] Renamed 6 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.runs/network_clock_axi_ethernet_0_0_synth_1/network_clock_axi_ethernet_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file network_clock_axi_ethernet_0_0_utilization_synth.rpt -pb network_clock_axi_ethernet_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 19 17:37:34 2022...

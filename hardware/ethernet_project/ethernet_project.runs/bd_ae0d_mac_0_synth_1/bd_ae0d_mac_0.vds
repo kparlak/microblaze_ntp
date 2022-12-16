@@ -1,0 +1,415 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr 19 17:34:35 2022
+# Process ID: 40512
+# Current directory: C:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.runs/bd_ae0d_mac_0_synth_1
+# Command line: vivado.exe -log bd_ae0d_mac_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_ae0d_mac_0.tcl
+# Log file: C:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.runs/bd_ae0d_mac_0_synth_1/bd_ae0d_mac_0.vds
+# Journal file: C:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.runs/bd_ae0d_mac_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source bd_ae0d_mac_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1162.730 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Data/en.525.612/Parlak_Project/hardware/user_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.cache/ip 
+Command: synth_design -top bd_ae0d_mac_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21156
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1236.555 ; gain = 73.824
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_ae0d_mac_0' [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0.v:67]
+INFO: [Synth 8-6157] synthesizing module 'bd_ae0d_mac_0_block' [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0_block.v:117]
+INFO: [Synth 8-6157] synthesizing module 'bd_ae0d_mac_0_mii_if' [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/physical/bd_ae0d_mac_0_mii_if.v:71]
+INFO: [Synth 8-6157] synthesizing module 'OBUF' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:46318]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUF' (1#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:46318]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32983]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (2#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32983]
+INFO: [Synth 8-6157] synthesizing module 'BUFR' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1410]
+	Parameter BUFR_DIVIDE bound to: BYPASS - type: string 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'BUFR' (3#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1410]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ae0d_mac_0_mii_if' (4#1) [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/physical/bd_ae0d_mac_0_mii_if.v:71]
+INFO: [Synth 8-6157] synthesizing module 'bd_ae0d_mac_0_axi4_lite_ipif_wrapper' [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0_axi4_lite_ipif_wrapper.v:75]
+INFO: [Synth 8-638] synthesizing module 'bd_ae0d_mac_0_axi4_lite_ipif_top' [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0_axi4_lite_ipif_top.vhd:107]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_ADDR_RANGE_SIZE bound to: 32'b00000000000000000000011111111111 
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 2047 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 64 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000001 
+	Parameter C_FAMILY bound to: virtex7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000001 
+	Parameter C_IPIF_ABUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 2047 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 64 - type: integer 
+	Parameter C_FAMILY bound to: virtex7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+	Parameter C_BUS_AWIDTH bound to: 11 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 2047 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000001 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (5#1) [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (6#1) [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (7#1) [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'bd_ae0d_mac_0_axi4_lite_ipif_top' (8#1) [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0_axi4_lite_ipif_top.vhd:107]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ae0d_mac_0_axi4_lite_ipif_wrapper' (9#1) [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0_axi4_lite_ipif_wrapper.v:75]
+INFO: [Synth 8-6157] synthesizing module 'bd_ae0d_mac_0_vector_decode' [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/statistics/bd_ae0d_mac_0_vector_decode.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ae0d_mac_0_vector_decode' (10#1) [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/statistics/bd_ae0d_mac_0_vector_decode.v:70]
+INFO: [Synth 8-6157] synthesizing module 'LUT4' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4' (26#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized0' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized0' (26#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized1' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized1' (26#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized2' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized2' (26#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized3' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized3' (26#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6157] synthesizing module 'RAM64X1D' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:70577]
+INFO: [Synth 8-6155] done synthesizing module 'RAM64X1D' (42#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:70577]
+INFO: [Synth 8-6157] synthesizing module 'RAM64X1D__parameterized0' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:70577]
+INFO: [Synth 8-6155] done synthesizing module 'RAM64X1D__parameterized0' (42#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:70577]
+INFO: [Synth 8-6157] synthesizing module 'RAM64X1D__parameterized1' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:70577]
+INFO: [Synth 8-6155] done synthesizing module 'RAM64X1D__parameterized1' (43#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:70577]
+INFO: [Synth 8-6157] synthesizing module 'LUT3' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39209]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3' (44#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39209]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized0' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39209]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized0' (44#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39209]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized1' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39209]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized1' (44#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39209]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized2' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39209]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized2' (44#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39209]
+INFO: [Synth 8-6157] synthesizing module 'SRL16E' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78034]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (45#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78034]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ae0d_mac_0_block' (49#1) [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0_block.v:117]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ae0d_mac_0' (50#1) [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0.v:67]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1384.062 ; gain = 221.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1384.062 ; gain = 221.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1384.062 ; gain = 221.332
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.306 . Memory (MB): peak = 1384.062 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 302 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0_board.xdc] for cell 'inst'
+Parsing XDC File [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0.xdc] for cell 'inst'
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0.xdc:90]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0.xdc:92]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0.xdc:94]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0.xdc:96]
+Finished Parsing XDC File [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_ae0d_mac_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_ae0d_mac_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.runs/bd_ae0d_mac_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.runs/bd_ae0d_mac_0_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0_clocks.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0_clocks.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_ae0d_mac_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_ae0d_mac_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1472.398 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 160 instances were transformed.
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 160 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.442 . Memory (MB): peak = 1488.352 ; gain = 15.953
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1488.352 ; gain = 325.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1488.352 ; gain = 325.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+WARNING: set_property IOB could not find object (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0.xdc, line 27).
+Applied set_property IOB = TRUE for inst/mii_interface/mii_tx_en_obuf_reg. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0.xdc, line 28).
+Applied set_property IOB = TRUE for inst/mii_interface/mii_tx_er_obuf_reg. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0.xdc, line 28).
+Applied set_property IOB = TRUE for inst/mii_interface/rxd_to_mac_reg. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0.xdc, line 29).
+Applied set_property IOB = TRUE for inst/mii_interface/rx_dv_to_mac_reg. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0.xdc, line 29).
+Applied set_property IOB = TRUE for inst/mii_interface/rx_er_to_mac_reg. (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0.xdc, line 29).
+WARNING: set_property IOB could not find object (constraint file  c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0.xdc, line 30).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.runs/bd_ae0d_mac_0_synth_1/dont_touch.xdc, line 6).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1488.352 ; gain = 325.621
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+INFO: [Synth 8-802] inferred FSM for state register 'tx_state_reg' in module 'tri_mode_ethernet_mac_v9_0_17_tx_axi_intf'
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'tri_mode_ethernet_mac_v9_0_17_rx_axi_intf'
+INFO: [Synth 8-802] inferred FSM for state register 'state_count_reg' in module 'tri_mode_ethernet_mac_v9_0_17_tx_cntl'
+INFO: [Synth 8-802] inferred FSM for state register 'pause_state_reg' in module 'tri_mode_ethernet_mac_v9_0_17_pfc_tx_cntl'
+INFO: [Synth 8-802] inferred FSM for state register 'legacy_state_reg' in module 'tri_mode_ethernet_mac_v9_0_17_pfc_tx_cntl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+INFO: [Synth 8-6159] Found Keep on FSM register 'tx_state_reg' in module 'tri_mode_ethernet_mac_v9_0_17_tx_axi_intf', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0000 |                             0000
+                   LOAD1 |                             0001 |                             0001
+                   LOAD2 |                             0010 |                             0010
+                    WAIT |                             0011 |                             0011
+                END_LOAD |                             0100 |                             0100
+              CLEAR_PIPE |                             0101 |                             0101
+                 RELOAD1 |                             0110 |                             0110
+                 RELOAD2 |                             0111 |                             0111
+                    SEND |                             1000 |                             1000
+                   BURST |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               01 |                               00
+                     PKT |                               11 |                               01
+                    WAIT |                               10 |                               10
+                    DONE |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'sequential' in module 'tri_mode_ethernet_mac_v9_0_17_rx_axi_intf'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                              001 |                              001
+        TRANSMIT_REQUEST |                              010 |                              010
+            TRANSMITTING |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_count_reg' in module 'tri_mode_ethernet_mac_v9_0_17_tx_cntl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                              000
+                     REQ |                             1000 |                              001
+                    WAIT |                             0100 |                              010
+                   COUNT |                             0010 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'legacy_state_reg' using encoding 'one-hot' in module 'tri_mode_ethernet_mac_v9_0_17_pfc_tx_cntl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  P_IDLE |                               00 |                               00
+                   P_REQ |                               01 |                               01
+                  P_WAIT |                               10 |                               10
+                  P_HOLD |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pause_state_reg' using encoding 'sequential' in module 'tri_mode_ethernet_mac_v9_0_17_pfc_tx_cntl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 1488.352 ; gain = 325.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 1488.352 ; gain = 325.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3321] set_false_path : Empty from list for constraint at line 85 of c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0.xdc. [c:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.gen/sources_1/bd/network_clock/ip/network_clock_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_ae0d_mac_0.xdc:85]
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:12 ; elapsed = 00:01:17 . Memory (MB): peak = 1488.352 ; gain = 325.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 1488.352 ; gain = 325.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:16 ; elapsed = 00:01:21 . Memory (MB): peak = 1488.352 ; gain = 325.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4163] Replicating register \mii_interface/rx_er_to_mac_reg  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \mii_interface/rx_dv_to_mac_reg  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \mii_interface/rxd_to_mac_reg[0]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \mii_interface/rxd_to_mac_reg[1]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \mii_interface/rxd_to_mac_reg[2]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \mii_interface/rxd_to_mac_reg[3]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \mii_interface/mii_tx_er_obuf_reg  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \mii_interface/mii_tx_en_obuf_reg  to handle IOB=TRUE attribute
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:20 ; elapsed = 00:01:26 . Memory (MB): peak = 1488.352 ; gain = 325.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:20 ; elapsed = 00:01:26 . Memory (MB): peak = 1488.352 ; gain = 325.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:20 ; elapsed = 00:01:26 . Memory (MB): peak = 1488.352 ; gain = 325.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:20 ; elapsed = 00:01:26 . Memory (MB): peak = 1488.352 ; gain = 325.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:20 ; elapsed = 00:01:26 . Memory (MB): peak = 1488.352 ; gain = 325.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:20 ; elapsed = 00:01:26 . Memory (MB): peak = 1488.352 ; gain = 325.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFR     |     2|
+|2     |CARRY4   |    33|
+|3     |LUT1     |   616|
+|4     |LUT2     |   277|
+|5     |LUT3     |   272|
+|6     |LUT4     |   287|
+|7     |LUT5     |   293|
+|8     |LUT6     |   545|
+|9     |MUXCY    |    70|
+|10    |MUXF7    |    13|
+|11    |MUXF8    |     2|
+|12    |RAM64X1D |   160|
+|13    |SRL16E   |    24|
+|14    |XORCY    |    70|
+|15    |FDCE     |   108|
+|16    |FDPE     |    20|
+|17    |FDRE     |  2657|
+|18    |FDSE     |   127|
+|19    |IBUF     |     8|
+|20    |OBUF     |     6|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:20 ; elapsed = 00:01:26 . Memory (MB): peak = 1488.352 ; gain = 325.621
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:49 ; elapsed = 00:01:18 . Memory (MB): peak = 1488.352 ; gain = 221.332
+Synthesis Optimization Complete : Time (s): cpu = 00:01:21 ; elapsed = 00:01:26 . Memory (MB): peak = 1488.352 ; gain = 325.621
+INFO: [Project 1-571] Translating synthesized netlist
+WARNING: [Synth 37-28] Duplicate attribute 'INIT' found for instance 'update_pause_ad_int_reg' of module 'FDRE'.
+Resolution: Check your design sources near the definition of the module or any related 'include files, looking for duplicate definitions with different values.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 1488.352 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 350 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1488.352 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 180 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 20 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 160 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+92 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:28 ; elapsed = 00:01:36 . Memory (MB): peak = 1488.352 ; gain = 325.621
+INFO: [Common 17-1381] The checkpoint 'C:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.runs/bd_ae0d_mac_0_synth_1/bd_ae0d_mac_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_ae0d_mac_0, cache-ID = 7035e33d326986f3
+INFO: [Coretcl 2-1174] Renamed 185 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.runs/bd_ae0d_mac_0_synth_1/bd_ae0d_mac_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_ae0d_mac_0_utilization_synth.rpt -pb bd_ae0d_mac_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 19 17:36:40 2022...

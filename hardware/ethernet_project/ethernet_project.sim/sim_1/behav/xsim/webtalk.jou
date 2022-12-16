@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Apr  2 12:03:01 2022
+# Process ID: 15764
+# Current directory: C:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.sim/sim_1/behav/xsim/xsim.dir/seg7_display_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Data/en.525.612/Parlak_Project/hardware/ethernet_project/ethernet_project.sim/sim_1/behav/xsim/xsim.dir/seg7_display_tb_behav/webtalk/xsim_webtalk.tcl -notrace

@@ -1,0 +1,216 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date             : Sun Apr 24 15:55:22 2022
+| Host             : DESKTOP-NN01VN7 running 64-bit major release  (build 9200)
+| Command          : report_power -file network_clock_wrapper_power_routed.rpt -pb network_clock_wrapper_power_summary_routed.pb -rpx network_clock_wrapper_power_routed.rpx
+| Design           : network_clock_wrapper
+| Device           : xc7a100tcsg324-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 1.343        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 1.233        |
+| Device Static (W)        | 0.110        |
+| Effective TJA (C/W)      | 4.6          |
+| Max Ambient (C)          | 78.9         |
+| Junction Temperature (C) | 31.1         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.067 |       37 |       --- |             --- |
+| Slice Logic              |     0.023 |    35536 |       --- |             --- |
+|   LUT as Logic           |     0.019 |    11172 |     63400 |           17.62 |
+|   LUT as Distributed RAM |     0.001 |     1592 |     19000 |            8.38 |
+|   Register               |     0.001 |    16001 |    126800 |           12.62 |
+|   CARRY4                 |    <0.001 |      499 |     15850 |            3.15 |
+|   F7/F8 Muxes            |    <0.001 |      290 |     63400 |            0.46 |
+|   LUT as Shift Register  |    <0.001 |      382 |     19000 |            2.01 |
+|   Others                 |    <0.001 |     1563 |       --- |             --- |
+| Signals                  |     0.036 |    26367 |       --- |             --- |
+| Block RAM                |     0.038 |       22 |       135 |           16.30 |
+| MMCM                     |     0.220 |        2 |         6 |           33.33 |
+| PLL                      |     0.115 |        1 |         6 |           16.67 |
+| DSPs                     |     0.002 |        3 |       240 |            1.25 |
+| I/O                      |     0.620 |       77 |       210 |           36.67 |
+| PHASER                   |     0.110 |       14 |       --- |             --- |
+| XADC                     |     0.004 |        1 |       --- |             --- |
+| Static Power             |     0.110 |          |           |                 |
+| Total                    |     1.343 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Vccint    |       1.000 |     0.219 |       0.199 |      0.019 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.305 |       0.287 |      0.018 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.029 |       0.025 |      0.004 |       NA    | Unspecified | NA         |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18    |       1.800 |     0.243 |       0.239 |      0.004 |       NA    | Unspecified | NA         |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.004 |       0.003 |      0.001 |       NA    | Unspecified | NA         |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccadc    |       1.800 |     0.022 |       0.002 |      0.020 |       NA    | Unspecified | NA         |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 4.6                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.6                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| Clock                                                                                                                                                     | Domain                                                                                                                                                                                                                               | Constraint (ns) |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| CLK100MHZ                                                                                                                                                 | CLK100MHZ                                                                                                                                                                                                                            |            10.0 |
+| clk_out1_network_clock_clk_wiz_0_0                                                                                                                        | network_clock_i/clk_wiz_0/inst/clk_out1                                                                                                                                                                                              |            10.0 |
+| clk_out1_network_clock_clk_wiz_0_0                                                                                                                        | network_clock_i/clk_wiz_0/inst/clk_out1_network_clock_clk_wiz_0_0                                                                                                                                                                    |            10.0 |
+| clk_out1_network_clock_clk_wiz_0_0_1                                                                                                                      | network_clock_i/clk_wiz_0/inst/clk_out1                                                                                                                                                                                              |            10.0 |
+| clk_out1_network_clock_clk_wiz_0_0_1                                                                                                                      | network_clock_i/clk_wiz_0/inst/clk_out1_network_clock_clk_wiz_0_0                                                                                                                                                                    |            10.0 |
+| clk_out2_network_clock_clk_wiz_0_0                                                                                                                        | network_clock_i/clk_wiz_0/inst/clk_out2_network_clock_clk_wiz_0_0                                                                                                                                                                    |             5.0 |
+| clk_out2_network_clock_clk_wiz_0_0_1                                                                                                                      | network_clock_i/clk_wiz_0/inst/clk_out2_network_clock_clk_wiz_0_0                                                                                                                                                                    |             5.0 |
+| clk_out3_network_clock_clk_wiz_0_0                                                                                                                        | network_clock_i/clk_wiz_0/inst/clk_out3_network_clock_clk_wiz_0_0                                                                                                                                                                    |            20.0 |
+| clk_out3_network_clock_clk_wiz_0_0_1                                                                                                                      | network_clock_i/clk_wiz_0/inst/clk_out3_network_clock_clk_wiz_0_0                                                                                                                                                                    |            20.0 |
+| clk_out4_network_clock_clk_wiz_0_0                                                                                                                        | network_clock_i/clk_wiz_0/inst/clk_out4_network_clock_clk_wiz_0_0                                                                                                                                                                    |             8.0 |
+| clk_out4_network_clock_clk_wiz_0_0_1                                                                                                                      | network_clock_i/clk_wiz_0/inst/clk_out4_network_clock_clk_wiz_0_0                                                                                                                                                                    |             8.0 |
+| clk_pll_i                                                                                                                                                 | network_clock_i/mig_7series_0/u_network_clock_mig_7series_0_0_mig/u_ddr2_infrastructure/clk_pll_i                                                                                                                                    |            12.3 |
+| clkfbout_network_clock_clk_wiz_0_0                                                                                                                        | network_clock_i/clk_wiz_0/inst/clkfbout_network_clock_clk_wiz_0_0                                                                                                                                                                    |            10.0 |
+| clkfbout_network_clock_clk_wiz_0_0_1                                                                                                                      | network_clock_i/clk_wiz_0/inst/clkfbout_network_clock_clk_wiz_0_0                                                                                                                                                                    |            10.0 |
+| freq_refclk                                                                                                                                               | network_clock_i/mig_7series_0/u_network_clock_mig_7series_0_0_mig/u_ddr2_infrastructure/freq_refclk                                                                                                                                  |             1.5 |
+| iserdes_clkdiv                                                                                                                                            | network_clock_i/mig_7series_0/u_network_clock_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clkdiv       |            12.3 |
+| iserdes_clkdiv_1                                                                                                                                          | network_clock_i/mig_7series_0/u_network_clock_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clkdiv       |            12.3 |
+| mem_refclk                                                                                                                                                | network_clock_i/mig_7series_0/u_network_clock_mig_7series_0_0_mig/u_ddr2_infrastructure/mem_refclk                                                                                                                                   |             3.1 |
+| network_clock_i/axi_ethernet_0/inst/mac/inst/mii_rx_clk                                                                                                   | network_clock_i/axi_ethernet_0/inst/mac/inst/mii_interface/mii_rx_clk_0                                                                                                                                                              |            40.0 |
+| network_clock_i/axi_ethernet_0/inst/mac/inst/mii_tx_clk                                                                                                   | network_clock_i/axi_ethernet_0/inst/mac/inst/mii_interface/mii_tx_clk_0                                                                                                                                                              |            40.0 |
+| network_clock_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/DRCK                                                                                             | network_clock_i/mdm_1/U0/Use_E2.BSCAN_I/DRCK                                                                                                                                                                                         |            33.3 |
+| network_clock_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/UPDATE                                                                                           | network_clock_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0                                                                                                                                                                                 |            33.3 |
+| oserdes_clk                                                                                                                                               | network_clock_i/mig_7series_0/u_network_clock_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk          |             3.1 |
+| oserdes_clk_1                                                                                                                                             | network_clock_i/mig_7series_0/u_network_clock_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk          |             3.1 |
+| oserdes_clk_2                                                                                                                                             | network_clock_i/mig_7series_0/u_network_clock_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk          |             3.1 |
+| oserdes_clk_3                                                                                                                                             | network_clock_i/mig_7series_0/u_network_clock_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk          |             3.1 |
+| oserdes_clkdiv                                                                                                                                            | network_clock_i/mig_7series_0/u_network_clock_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clkdiv       |             6.2 |
+| oserdes_clkdiv_1                                                                                                                                          | network_clock_i/mig_7series_0/u_network_clock_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clkdiv       |            12.3 |
+| oserdes_clkdiv_2                                                                                                                                          | network_clock_i/mig_7series_0/u_network_clock_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clkdiv       |             6.2 |
+| oserdes_clkdiv_3                                                                                                                                          | network_clock_i/mig_7series_0/u_network_clock_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clkdiv       |            12.3 |
+| pll_clk3_out                                                                                                                                              | network_clock_i/mig_7series_0/u_network_clock_mig_7series_0_0_mig/u_ddr2_infrastructure/pll_clk3_out                                                                                                                                 |            12.3 |
+| pll_clkfbout                                                                                                                                              | network_clock_i/mig_7series_0/u_network_clock_mig_7series_0_0_mig/u_ddr2_infrastructure/pll_clkfbout                                                                                                                                 |            10.0 |
+| sync_pulse                                                                                                                                                | network_clock_i/mig_7series_0/u_network_clock_mig_7series_0_0_mig/u_ddr2_infrastructure/sync_pulse                                                                                                                                   |            49.2 |
+| sys_clk_pin                                                                                                                                               | CLK100MHZ                                                                                                                                                                                                                            |            10.0 |
+| u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clk | network_clock_i/mig_7series_0/u_network_clock_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/A_rst_primitives_reg |             3.1 |
+| u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk | network_clock_i/mig_7series_0/u_network_clock_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/A_rst_primitives_reg |             3.1 |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-------------------------------------------+-----------+
+| Name                                      | Power (W) |
++-------------------------------------------+-----------+
+| network_clock_wrapper                     |     1.233 |
+|   network_clock_i                         |     1.145 |
+|     axi_ethernet_0                        |     0.038 |
+|       inst                                |     0.038 |
+|     axi_ethernet_0_fifo                   |     0.016 |
+|       U0                                  |     0.016 |
+|     axi_mem_interconnect                  |     0.016 |
+|       m00_couplers                        |     0.008 |
+|       s00_couplers                        |     0.003 |
+|       s01_couplers                        |     0.002 |
+|       xbar                                |     0.003 |
+|     axi_timer_0                           |     0.003 |
+|       U0                                  |     0.003 |
+|     clk_wiz_0                             |     0.108 |
+|       inst                                |     0.108 |
+|     microblaze_0                          |     0.050 |
+|       U0                                  |     0.050 |
+|     microblaze_0_axi_intc                 |     0.001 |
+|       U0                                  |     0.001 |
+|     microblaze_0_axi_periph               |     0.001 |
+|       xbar                                |     0.001 |
+|     mig_7series_0                         |     0.904 |
+|       u_network_clock_mig_7series_0_0_mig |     0.903 |
+|     mii_to_rmii_0                         |     0.001 |
+|       U0                                  |     0.001 |
+|     seg7_display_0                        |     0.004 |
+|       inst                                |     0.004 |
++-------------------------------------------+-----------+
+
+

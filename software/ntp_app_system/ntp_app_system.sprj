@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="ntp_app_system" platform="C:/Data/en.525.612/Parlak_Project/software/network_clock_wrapper/export/network_clock_wrapper/network_clock_wrapper.xpfm" platformUID="xilinx:nexys-a7-100t::0.0(custom)" sysConfig="network_clock_wrapper" runtime="C/C++" rootFSLocation="" linuxImage="" sysroot="">
+  <configuration name="Debug" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.470466957">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="ntp_app" domainName="freertos10_xilinx_microblaze_0" domainPrettyName="freertos10_xilinx_microblaze_0" appBuildConfig="Debug"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="ntp_app" domainName="freertos10_xilinx_microblaze_0" domainPrettyName="freertos10_xilinx_microblaze_0" appBuildConfig="Debug"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Release" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.1592599115">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="ntp_app" domainName="freertos10_xilinx_microblaze_0" domainPrettyName="freertos10_xilinx_microblaze_0" appBuildConfig="Release"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </configBuildOptions>
+  </configuration>
+</systemproject:SystemProject>

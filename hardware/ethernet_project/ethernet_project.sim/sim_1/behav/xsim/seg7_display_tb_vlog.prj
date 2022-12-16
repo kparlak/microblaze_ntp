@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../ethernet_project.gen/sources_1/bd/echo_server/ipshared/d0f7" --include "../../../../ethernet_project.gen/sources_1/bd/echo_server/ipshared/25b7/hdl/verilog" --include "../../../../ethernet_project.gen/sources_1/bd/echo_server/ipshared/896c/hdl/verilog" --include "../../../../ethernet_project.gen/sources_1/bd/echo_server/ipshared/ec67/hdl" --include "../../../../ethernet_project.gen/sources_1/bd/uart/ipshared/d0f7" --include "../../../../ethernet_project.gen/sources_1/bd/uart/ipshared/25b7/hdl/verilog" --include "../../../../ethernet_project.gen/sources_1/bd/uart/ipshared/896c/hdl/verilog" --include "../../../../ethernet_project.gen/sources_1/bd/uart/ipshared/ec67/hdl" --include "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../ethernet_project.srcs/sources_1/new/seg7_display.v" \
+"../../../../ethernet_project.srcs/sim_1/new/seg7_display_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
